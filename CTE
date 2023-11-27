@@ -1,0 +1,24 @@
+Here is an SQL query with common table expression. 
+It looks for top-300 movies by revenue, with rating, genre and revenue percentage.
+
+WITH base AS (
+SELECT D.film_id, D.title AS movie_name, F.name AS genre, 
+       D. rating, SUM(A.amount) AS revenue
+FROM payment A
+INNER JOIN rental B ON A.rental_id = B.rental_id
+INNER JOIN inventory C ON B.inventory_id = C.inventory_id
+INNER JOIN film D ON C.film_id = D.film_id
+INNER JOIN film_category E ON D.film_id = E.film_id
+INNER JOIN category F ON E.category_id = F.category_id
+GROUP BY D.film_id, D.title, F.name, D.rating
+ORDER BY SUM(A.amount) DESC
+),
+total AS (
+SELECT SUM (amount) AS total_revenue
+FROM payment)
+SELECT base.movie_name, base.genre, base.rating, base.revenue,
+	   total.total_revenue,
+	   CAST(base.revenue AS FLOAT)/total.total_revenue*100 AS movie_revenue_percentage
+FROM base, total
+ORDER BY base.revenue DESC
+LIMIT 300;
