@@ -1,0 +1,14 @@
+This query provides top 10 cities by customer spendings that fall within any of the top 10 countries identified earlier.
+
+SELECT E.country, D.city, SUM (A.amount) AS total_amount, COUNT (DISTINCT B.customer_id) AS customer_count
+FROM payment A
+INNER JOIN customer B ON A.customer_id = B.customer_id
+INNER JOIN address C ON B.address_id = C.address_id
+INNER JOIN city D ON C.city_id = D.city_id
+INNER JOIN country E ON D.country_id = E.country_id
+GROUP BY E.country, D.city
+HAVING E.country IN ('India','China','United States', 'Japan', 'Mexico',
+		            'Brazil', 'Russian Federation', 'Philippines', 
+		            'Turkey','Indonesia')
+ORDER BY SUM (A.amount) DESC
+LIMIT 10;
