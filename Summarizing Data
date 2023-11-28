@@ -1,0 +1,11 @@
+This query provides the descriptive statistics for the customer table (relevant columns).
+
+SELECT COUNT (customer_id) AS total_customers,
+              COUNT (DISTINCT store_id) AS total_stores,  
+              CASE 
+                  WHEN (MODE () WITHIN GROUP (ORDER BY store_id)) = 1 THEN 'Canada'
+                  ELSE 'Australia'
+	                END AS mode_store, -- the company has stores only in 2 countries
+       COUNT (DISTINCT create_date) AS distinct_create_date,
+       MODE () WITHIN GROUP (ORDER BY create_date) AS customers_profile_create_date
+FROM customer;
