@@ -11,4 +11,4 @@ Rockbuster Stealth dataset contains information about the company’s movie inve
 - Excel file with SQL queries
 - Data dictionary
 - 
-[Tableau Dashboard](https://public.tableau.com/views/Rockbuster_Project_Kolesnyk/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)https://public.tableau.com/views/Rockbuster_Project_Kolesnyk/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+[Tableau Dashboard] (https://public.tableau.com/views/Rockbuster_Project_Kolesnyk/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)https://public.tableau.com/views/Rockbuster_Project_Kolesnyk/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
