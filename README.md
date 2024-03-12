@@ -22,7 +22,7 @@ I used PostgreSQL to work with the database.
 - Merged multiple tables using INNER JOIN and used common table expression (CTE) to answer the business questions.
 - Downloaded query result tables as Excel files and used them to build visualizations in Tableau.
 
-# Results and recommendations:
+## Results and Recommendations:
 - Provided a list of movies that contributed the most to the company's revenue, along with the most profitable movie ratings, so the company can extend license for this categories.
 - Defined top-3 popular genres (Sports, Sci-Fi and Animation) and identified the least popular one - Thriller.
 - Advised to prioritize Asia, North and South America regions when launching the online platform, as they showed the highest sales.
