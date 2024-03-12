@@ -33,4 +33,4 @@ I used PostgreSQL to work with the database.
 - PowerPoint presentation
 - Excel file with SQL queries
 - Data dictionary 
-- Dashboard on Tableau Public
+- Dashboard on Tableau Public (All personal identifiable information was fabricated for the learning purposes, so publishing it online doesn't break the data privacy)
