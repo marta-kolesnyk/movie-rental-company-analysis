@@ -13,13 +13,21 @@ It consists of 4 fact tables and 11 dimension tables.
 
 I used PostgreSQL to work with the database. 
 
-## Analysis Phase:
-- Used Lucidchart application to extract Entity Relationshp Diagram (ERD) to find out the database structure
-- Documented information about each table in a Data Dictionary (specified the columns type and description, marked primary and secondary keys)
-- Wrote cost-effective queries to group and order the data using functions such as GROUP BY, HAVING, ORDER BY, LIMIT , as well as aggregate functions (SUM, AVG, COUNT, etc.)
-- 
-- 
-- 
+## Analysis Process:
+- Used Lucidchart application to extract Entity Relationshp Diagram (ERD) to find out the database structure.
+- Documented information about each table in a Data Dictionary (specified the columns type and description, marked primary and secondary keys).
+- Replaced non-uniform data for rating column.
+- Used aggregate functions to get a descriptive statistics for needed columns.
+- Wrote cost-effective queries to filter, summarize, and sort data using the WHERE, GROUP BY, HAVING and ORDER BY clauses.
+- Merged multiple tables using INNER JOIN and used common table expression (CTE) to answer the business questions.
+- Downloaded query result tables as Excel files and used them to build visualizations in Tableau.
+
+# Results and recommendations:
+- Provided a list of movies that contributed the most to the company's revenue, along with the most profitable movie ratings, so the company can extend license for this categories.
+- Defined top-3 popular genres (Sports, Sci-Fi and Animation) and identified the least popular one - Thriller.
+- Advised to prioritize Asia, North and South America regions when launching the online platform, as they showed the highest sales.
+- Drew attention to the countries with only one customer (almost 40% of the market) and recommended to analyze them further to find the reason behind low popularity.
+- Provided a list of the most loyal customers and recommended to introduce special rates or rewards for them to encourage rent more movies.
 
 ## Project Deliverables:
 - PowerPoint presentation
