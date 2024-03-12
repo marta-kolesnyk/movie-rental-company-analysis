@@ -1,4 +1,4 @@
-Here is an SQL query with common table expression. 
+Here is a SQL query with common table expression. 
 It looks for top-300 movies by revenue, with rating, genre and revenue percentage.
 
 WITH base AS (
