@@ -33,4 +33,4 @@ I used PostgreSQL to work with the database.
 - PowerPoint presentation
 - Excel file with SQL queries
 - Data dictionary 
-- Visualizations on Tableau Dashboard
+- Dashboard on Tableau Public
