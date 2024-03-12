@@ -1,8 +1,8 @@
-This query provides total revenue and movies amount by genre.
+This query provides total revenue and movies amount by genre with applying of multiple INNER JOINs.
 
 SELECT E.name AS genre, 
        SUM(A.amount) AS revenue,
-	     COUNT (DISTINCT D.film_id) AS movies_amount
+       COUNT (DISTINCT D.film_id) AS movies_amount
 FROM payment A
 INNER JOIN rental B ON A.rental_id = B.rental_id
 INNER JOIN inventory C ON B.inventory_id = C.inventory_id
