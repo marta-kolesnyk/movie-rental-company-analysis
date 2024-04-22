@@ -11,15 +11,15 @@ Rockbuster Stealth database contains information about the company’s movie inv
 The database has a snowflake schema, where dimension table is linked to other sub dimension tables that contain relational information.
 It consists of 4 fact tables and 11 dimension tables. 
 
-I used PostgreSQL to work with the database. 
+I used **PostgreSQL** to work with the database. 
 
 ## Analysis Process:
-- Used Lucidchart application to extract Entity Relationshp Diagram to find out the database structure.
-- Documented information about each table in a Data Dictionary (specified the columns type and description, marked primary and secondary keys).
+- Used Lucidchart application to extract **Entity Relationshp Diagram** to find out the database structure.
+- Documented information about each table in a **Data Dictionary** (specified the columns type and description, marked primary and secondary keys).
 - Replaced non-uniform data for rating column.
 - Used aggregate functions to get a descriptive statistics for needed columns.
-- Wrote cost-effective queries to filter, summarize, and sort data using the WHERE, GROUP BY, HAVING and ORDER BY clauses.
-- Merged multiple tables using INNER JOIN and used common table expression to answer the business questions.
+- Wrote cost-effective queries to filter, summarize, and sort data using the **WHERE, GROUP BY, HAVING and ORDER BY clauses**.
+- Merged multiple tables using **INNER JOIN** and used **common table expression** to answer the business questions.
 - Downloaded query result tables as Excel files and used them to build visualizations in Tableau.
 
 ## Results and Recommendations:
